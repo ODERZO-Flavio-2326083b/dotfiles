@@ -1,3 +1,1 @@
-source ~/.config/neovim
-set shell=bash.exe
-set shellcmdflag=-c
+/mnt/c/users/Flavio/.ideavimrc
