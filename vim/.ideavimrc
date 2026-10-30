@@ -1,1 +1,40 @@
-/mnt/c/users/Flavio/.ideavimrc
+set scrolloff=10
+set shell=bash.exe
+set shellcmdflag=-lic
+set shellxquote=
+
+set visualbell
+set wildmenu
+set history=1000
+
+set incsearch
+
+" " Key mappings
+" NORMAL MODE
+let mapleader=" "
+
+nnoremap cc "_cc
+nnoremap C "_C
+nnoremap ciw "_ciw
+nnoremap caw "_caw
+
+" New line in normal mode
+nnoremap <a-o> mao<ESC>`a
+
+" Remove line in normal mode
+nnoremap <a-i> maj"_dd<ESC>`a
+
+nnoremap gp "*p
+map gy "*y
+
+" Refactoring (leader r)
+map <leader>rn :action RenameElement<cr>
+
+" Errors and diagnostics (leader e)
+map <leader>en :action GotoNextError<cr>
+map <leader>ep :action GotoPreviousError<cr>
+map <leader>ep :action GotoPreviousError<cr>
+map <leader>ed :action ShowErrorDescription<cr>
+
+" INSERT MODE
+imap <C-o> <Esc>ma<a-o>`aa
